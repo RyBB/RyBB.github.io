@@ -9,14 +9,16 @@
     <script src="src/js/makeDropboxURL.js"></script>
 </head>
 <body>
-    <label>ここにDropboxのリンクを貼り付けてください。</label><br>
-    <form id="f1">
-        <input type="text" value="" placeholder="DropboxのURLを貼り付けてください">
+    <div class="block">
+        <label>ここにDropboxのリンクを貼り付けてください。</label><br>
+        <form id="f1">
+            <input type="text" value="" placeholder="https://www.dropbox.com/s/abcdefg/sample.js?dl=0">
+            <br/>
+            <input type="button" value="変換する" onclick="changeURL()" />
+        </form>
         <br/>
-        <input type="button" value="変換する" onclick="changeURL()" />
-    </form>
-    <br/>
-    <div>↓ここに直リンクのURLが表示されます。</div>
-    <div id="val"></div>
+        <div>↓ここに直リンクのURLが表示されます。</div>
+        <div id="val"></div>
+    </div>
 </body>
 </html>
